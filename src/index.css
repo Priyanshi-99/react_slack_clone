@@ -98,7 +98,64 @@ code {
   background: #350d36;
   cursor: pointer;
 }
+#slack {
+  display: flex;
+}
 
-#MainCont {
+#Main {
   width: 100%;
+}
+#Main .about-channel {
+  padding: 10px 20px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+}
+
+#Main .name-channel {
+  font-weight: 700;
+  color: black;
+  font-size: 21px;
+}
+#Main .messages-list {
+  padding-bottom: 90px;
+}
+#Main .messages-list .message {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#Main .messages-list .message .user {
+  font-weight: 600;
+}
+#Main .messages-list .message .user div {
+  font-weight: 400;
+}
+
+#Main .messages-list .message span {
+  color: grey;
+  margin-left: 10px;
+  font-size: 13px;
+}
+#Main .left-block img {
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#Main .input {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+}
+#Main .input textarea {
+  width: 80%;
+  margin-left: 10px;
+  height: 70px;
+  resize: none;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
