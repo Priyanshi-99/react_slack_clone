@@ -1,11 +1,19 @@
 import React, { Component } from "react";
-import SignIn from "./SignIn";
+import { SignIn, Slack } from "./";
+import { Switch, Route } from "react-router-dom";
+function Home() {
+  return <div>Home</div>;
+}
 
 class App extends Component {
   render() {
     return (
       <div>
-        <SignIn />
+        <Switch>
+          <Route exact path="/" component={SignIn} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/slack" component={Slack} />
+        </Switch>
       </div>
     );
   }
