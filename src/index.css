@@ -22,14 +22,83 @@ code {
   margin: 15px 0;
   text-align: center;
 }
-.user-profile {
+.btn {
+  border: 0;
+  padding: 10px 7px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-basic {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  background-color: #f1f1f1;
 }
-.user-profile img {
+.btn-basic:hover {
+  background-color: #e1e1e1;
+}
+.btn-basic img {
+  height: 20px;
+  margin-right: 10px;
+}
+#sidebar {
+  box-sizing: border-box;
+  width: 230px;
+  min-width: 230px;
+  background-color: purple;
+  font-size: 15px;
+  min-height: 100vh;
+}
+#sidebar .user-profile {
   display: flex;
-  border: 1px solid red;
-  width: 25px;
-  height: 25px;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+#sidebar .user-profile img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+#sidebar .sidebar-spacer {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+#sidebar .user-channels {
+  color: grey;
+  margin: 10px;
+  color: #fff;
+  font-weight: 400;
+}
+#sidebar .user-channels .list {
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+}
+
+#sidebar .user-channels header {
+  font-weight: 500;
+  color: rgb(207, 195, 207);
+  font-size: 15px;
+  padding: 10px 15px;
+}
+#sidebar .list li {
+  padding: 7px 15px;
+}
+#sidebar .list li:hover {
+  background: #350d36;
+  cursor: pointer;
+}
+
+#MainCont {
+  width: 100%;
 }
