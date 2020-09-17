@@ -22,3 +22,14 @@ code {
   margin: 15px 0;
   text-align: center;
 }
+.user-profile {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.user-profile img {
+  display: flex;
+  border: 1px solid red;
+  width: 25px;
+  height: 25px;
+}
