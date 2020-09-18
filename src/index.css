@@ -73,28 +73,29 @@ code {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0;
 }
-#sidebar .user-channels {
+#sidebar .channels {
   color: grey;
   margin: 10px;
   color: #fff;
   font-weight: 400;
 }
-#sidebar .user-channels .list {
+#sidebar .channels .channels-list {
   list-style-type: none;
   margin: 5px 0;
   padding: 0;
 }
 
-#sidebar .user-channels header {
+#sidebar .channels header {
   font-weight: 500;
   color: rgb(207, 195, 207);
   font-size: 15px;
   padding: 10px 15px;
 }
-#sidebar .list li {
+#sidebar .channels-list li a {
   padding: 7px 15px;
+  color: #e1e1e1;
 }
-#sidebar .list li:hover {
+#sidebar .channels-list li a:hover {
   background: #350d36;
   cursor: pointer;
 }
@@ -102,53 +103,67 @@ code {
   display: flex;
 }
 
-#Main {
+#main-container {
   width: 100%;
 }
-#Main .about-channel {
+#main-container .about-channel {
   padding: 10px 20px;
   border-bottom: 1px solid #e2e2e2;
   margin-bottom: 10px;
 }
-
-#Main .name-channel {
-  font-weight: 700;
-  color: black;
+#main-container .about-channel .channel-name {
   font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-#Main .messages-list {
+#main-container .messages-list {
   padding-bottom: 90px;
 }
-#Main .messages-list .message {
+
+#main-container .messages-list .message {
   display: flex;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-#Main .messages-list .message .user {
-  font-weight: 600;
-}
-#Main .messages-list .message .user div {
-  font-weight: 400;
+  /* border: 1px solid red; */
+  margin-bottom: 15px;
+  padding-left: 20px;
 }
 
-#Main .messages-list .message span {
-  color: grey;
-  margin-left: 10px;
-  font-size: 13px;
-}
-#Main .left-block img {
-  height: 50px;
+#main-container .messages-list .left-block img {
+  height: 40px;
   margin-right: 10px;
-  margin-left: 5px;
 }
 
-#Main .input {
+#main-container .messages-list .right-block {
+}
+
+#main-container .messages-list .right-block .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#main-container .messages-list .right-block .user div {
+  font-weight: 900;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+#main-container .messages-list .right-block .user span {
+  font-weight: 400;
+  color: rgb(97, 96, 97);
+  font-size: 12px;
+}
+
+#main-container .messages-list .right-block .user-message {
+  color: rgb(29, 28, 29);
+  font-weight: 400;
+  font-size: 15px;
+}
+#main-container .chat-box {
   position: fixed;
   bottom: 0;
   background: #fff;
   width: 100%;
 }
-#Main .input textarea {
+#main-container .chat-box textarea {
   width: 80%;
   margin-left: 10px;
   height: 70px;
